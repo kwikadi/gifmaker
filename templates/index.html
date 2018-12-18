@@ -37,7 +37,7 @@
 
           <!-- Standar Form -->
           <h5>Select files from your computer</h5>
-          <form action="" method="post" enctype="multipart/form-data" id="js-upload-form">
+          <form action="/data" method="POST" enctype="multipart/form-data" id="js-upload-form">
             <div class="form-inline">
               <div class="form-group">
                 <input type="file" name="files[]" id="js-upload-files" multiple>
@@ -49,22 +49,22 @@
           </form>
 
           <!-- Drop Zone -->
-          <br>
+          <!-- <br>
           <div class = "container">
             <h5>Or drag and drop files below</h5>
             <div class="upload-drop-zone" id="drop-zone">
               Just drag and drop files here
             </div>
-          </div>
+          </div> -->
 
           <!-- Progress Bar -->
           <!-- <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
               <span class="sr-only">60% Complete</span>
             </div>
-          </div>
+          </div> -->
 
-          <div class="js-upload-finished">
+          <!-- <div class="js-upload-finished">
             <h3>Processed files</h3>
             <div class="list-group">
               <a href="#" class="list-group-item list-group-item-success"><span class="badge alert-success pull-right">Success</span>image-01.jpg</a>
@@ -89,7 +89,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="static/js/layout.js"> </script>
