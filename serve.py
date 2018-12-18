@@ -3,6 +3,7 @@ from werkzeug.utils import secure_filename
 import os
 import random
 import string
+import convert
 
 app = Flask(__name__)
 
@@ -19,4 +20,5 @@ def getdata():
     os.mkdir(new_folder)
     for element in request.files.getlist("files[]"):
         element.save(os.path.join(new_folder,secure_filename(element.filename)))
+    convert.create_gif(new_folder, 0.25)
     return redirect(url_for('landing'))
